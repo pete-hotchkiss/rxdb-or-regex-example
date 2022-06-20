@@ -1,0 +1,27 @@
+{
+  "name": "rxdb-or-regex-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pete-hotchkiss/rxdb-or-regex-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pete-hotchkiss/rxdb-or-regex-example/issues"
+  },
+  "homepage": "https://github.com/pete-hotchkiss/rxdb-or-regex-example#readme",
+  "dependencies": {
+    "pouchdb-adapter-memory": "^7.3.0",
+    "rxdb": "^12.5.3",
+    "rxjs": "^7.5.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}

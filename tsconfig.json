@@ -1,0 +1,22 @@
+{
+    "include": [
+      "src", "**/*.ts", "**/*.js", "**/*.json", "node_modules/jest-extended/types/**/*.d.ts"
+    ],
+    "version": "4.0.2",
+    "compilerOptions": {
+      "lib": ["es2016", "dom"],
+      "target": "es6",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "outDir": "dist",
+      "baseUrl": "src",
+      "resolveJsonModule": true,
+      "types": ["cypress"]
+    },
+    "exclude": [
+        "node_modules", "tests"
+    ]
+
+}

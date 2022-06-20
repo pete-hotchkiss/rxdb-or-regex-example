@@ -58,13 +58,13 @@ export class DataStore {
       }
     }).exec();
 
-    console.log(`using regex there are ${set2.length} items returned but it should be 1!`);
+    console.log(`using regex there are ${set2.length} items returned `);
 
     let set3 = await this.db.people.find({
       selector: {
         "$or": [
-          { firstName: {"$regex": new RegExp(".*Ian.*", "gi") } },
-          { surName: {"$regex": new RegExp(".*Ian.*", "gi") } }
+          { firstName: {"$regex": /.*ian.*/gi } },
+          { surName: {"$regex": /.*ian.*/gi } }
         ]
       }
     }).exec();

@@ -1,21 +1,22 @@
 {
   "schema": {
     "title": "Person Schema",
-    "description": "describes a person typr",
+    "description": "describes a person type",
     "version": 0,
     "type": "object",
     "primaryKey": "id",
     "properties": {
       "id": {
         "type": "string",
-        "primary": true
+        "primary": true,
+        "maxLength": 6
       },
-      "firstName": { "type": "string" },
-      "surName": { "type": "string" }
+      "firstName": { "type": "string", "maxLength": 100 },
+      "surName": { "type": "string", "maxLength": 100 }
     },
     "required": ["id", "surName", "firstName"],
     "indexes": [
-      "firstName", "surName"
+      "firstName", "surName", ["firstName", "surName"]
     ]
   }
 }

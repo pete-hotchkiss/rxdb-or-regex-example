@@ -63,8 +63,8 @@ export class DataStore {
     let set3 = await this.db.people.find({
       selector: {
         "$or": [
-          { firstName: {"$regex": /.*ian.*/gi } },
-          { surName: {"$regex": /.*ian.*/gi } }
+          { firstName: [{"$regex": /.*ian.*/gi }] },
+          { surName: [{"$regex": /.*ian.*/gi }] }
         ]
       }
     }).exec();

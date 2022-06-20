@@ -13,9 +13,8 @@ It shows a simple database store (this one running in memory) that is unable to 
 
 The query using `$eq` matching an exact string returns results as expected
 
-The second query which tries to match against the `firstName` field using a `$regex` will not return any results.
 
-The third query which attempts nested `$regex` queries inside an `$or` collection will throw an error as it doesn't get any matches.
+The third query which attempts nested `$regex` queries inside an `$or` collection will throw an error
 
 ![screen dump of output](./screen-dump.png)
 

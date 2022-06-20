@@ -54,7 +54,7 @@ export class DataStore {
 
     let set2 = await this.db.people.find({
       selector: {
-        firstName: { "$regex": /.*ian.*/, "$options": "gi" }
+        firstName: { "$regex": /.*ian.*/gi}
       }
     }).exec();
 

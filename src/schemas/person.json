@@ -1,0 +1,21 @@
+{
+  "schema": {
+    "title": "Person Schema",
+    "description": "describes a person typr",
+    "version": 0,
+    "type": "object",
+    "primaryKey": "id",
+    "properties": {
+      "id": {
+        "type": "string",
+        "primary": true
+      },
+      "firstName": { "type": "string" },
+      "surName": { "type": "string" }
+    },
+    "required": ["id", "surName", "firstName"],
+    "indexes": [
+      "firstName", "surName"
+    ]
+  }
+}
